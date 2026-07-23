@@ -1,24 +1,38 @@
 # iam-bob-langgraph
 
-> **Intent Agent Model (IAM)** — *not* Identity and Access Management.  
-> Bob is the **reference implementation family** for IAM. These repos are different **runtimes** of the same model, not separate products.
->
-> | Repo | Runtime | Status |
-> |------|---------|--------|
-> | [`iam-bob-adk`](https://github.com/jeremylongshore/iam-bob-adk) | Google ADK | Historical V1 |
-> | [`iam-bob-pydantic`](https://github.com/jeremylongshore/iam-bob-pydantic) | Pydantic AI + LiteLLM (BYOK, MCP) | Historical V2 |
-> | [`iam-bob-langgraph`](https://github.com/jeremylongshore/iam-bob-langgraph) | LangGraph | **Reserved (this repo — not built)** |
-> | [`iam-bob-intendant`](https://github.com/jeremylongshore/iam-bob-intendant) | Operational worker (AGP-composed) | Live automation |
+**Intent Agent Model (IAM) V3** — LangGraph runtime.
 
 ## Status
 
-**Name reserved for IAM V3.** No implementation yet. Do not treat this as a shipped product.
+Vertical slice implemented: **Estate Cartographer** (read Intent OS authorities → proposals → optional graph projection → evidence chain).
 
-When built, this will be a reference implementation of the Intent Agent Model using
-[LangGraph](https://github.com/langchain-ai/langgraph).
+Not a general-purpose agent framework.
 
-## See also
+## Install
 
-- [iam-bob-adk](https://github.com/jeremylongshore/iam-bob-adk) — V1 (Google ADK)
-- [iam-bob-pydantic](https://github.com/jeremylongshore/iam-bob-pydantic) — V2 (Pydantic AI)
-- [iam-bob-intendant](https://github.com/jeremylongshore/iam-bob-intendant) — operational worker
+```bash
+python3 -m venv .venv
+.venv/bin/pip install -e .
+.venv/bin/pip install -r requirements.txt  # if present
+```
+
+## Commands
+
+```bash
+bob-langgraph doctor
+bob-langgraph cartographer plan
+bob-langgraph cartographer run                  # dry-run default
+bob-langgraph cartographer run --apply --approve-all-machine
+bob-langgraph cartographer status --run-id …
+```
+
+## Governance
+
+May: read authorities, propose relationships, rebuild disposable graph, verify, emit receipts.  
+May **not** without approval: declare human owners, expand allowlists, write GitHub/Plane/Beads, promote to Big Brain.
+
+## Dependency
+
+```
+bob-langgraph → intent-os estate-graph CLI → LadybugDB
+```

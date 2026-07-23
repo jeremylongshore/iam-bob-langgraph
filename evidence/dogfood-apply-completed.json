@@ -1,0 +1,411 @@
+{
+  "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+  "phase": "completed",
+  "dry_run": false,
+  "intent_os_root": "/home/jeremy/000-projects/intent-os",
+  "events": [
+    {
+      "event_id": "6ef7b4de-8562-418d-a02e-4e5ce2810161",
+      "event_name": "PortfolioGraphRefreshRequested",
+      "event_version": "1.0.0",
+      "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "agent_identity": "iam-bob-langgraph/estate-cartographer",
+      "correlation_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "causation_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "timestamp": "2026-07-23T17:35:29Z",
+      "source_authority": "intent-os",
+      "disclosure_tier": "internal",
+      "payload": {
+        "dry_run": false
+      },
+      "previous_event_hash": "",
+      "content_hash": "f34296c779258ae7c85f43d623ec3cb3485e942f3be276a4c69b72a73fd029af"
+    },
+    {
+      "event_id": "7ddb7e96-59eb-4f91-844f-558f069b98ad",
+      "event_name": "SourceCollectionCompleted",
+      "event_version": "1.0.0",
+      "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "agent_identity": "iam-bob-langgraph/estate-cartographer",
+      "correlation_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "causation_id": "6ef7b4de-8562-418d-a02e-4e5ce2810161",
+      "timestamp": "2026-07-23T17:35:29Z",
+      "source_authority": "intent-os",
+      "disclosure_tier": "internal",
+      "payload": {
+        "sources": [
+          "/home/jeremy/000-projects/intent-os/ops/inventory/estate-inventory.json"
+        ]
+      },
+      "previous_event_hash": "f34296c779258ae7c85f43d623ec3cb3485e942f3be276a4c69b72a73fd029af",
+      "content_hash": "5b07308910ecb76c89d025be49eb327777a5f60c84b1cd6b0b7f9454655fcdfb"
+    },
+    {
+      "event_id": "f45d1c5d-60b4-4735-8595-ffdee8f10cc3",
+      "event_name": "RelationshipProposalCreated",
+      "event_version": "1.0.0",
+      "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "agent_identity": "iam-bob-langgraph/estate-cartographer",
+      "correlation_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "causation_id": "7ddb7e96-59eb-4f91-844f-558f069b98ad",
+      "timestamp": "2026-07-23T17:35:29Z",
+      "source_authority": "intent-os",
+      "disclosure_tier": "internal",
+      "payload": {
+        "count": 1
+      },
+      "previous_event_hash": "5b07308910ecb76c89d025be49eb327777a5f60c84b1cd6b0b7f9454655fcdfb",
+      "content_hash": "37e53a006a182fb9894248a48272bf2701acab6bc2f4763d91007add4e2c4b5a"
+    },
+    {
+      "event_id": "8dac83cc-8308-4d15-bc87-c9b7b6847eed",
+      "event_name": "GraphProjectionStarted",
+      "event_version": "1.0.0",
+      "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "agent_identity": "iam-bob-langgraph/estate-cartographer",
+      "correlation_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "causation_id": "f45d1c5d-60b4-4735-8595-ffdee8f10cc3",
+      "timestamp": "2026-07-23T17:35:29Z",
+      "source_authority": "intent-os",
+      "disclosure_tier": "internal",
+      "payload": {
+        "dry_run": false
+      },
+      "previous_event_hash": "37e53a006a182fb9894248a48272bf2701acab6bc2f4763d91007add4e2c4b5a",
+      "content_hash": "72cfebebc3135f3a8584db003d85c9a7dc96c55a95d1dc2aed7e2d038ba4a844"
+    },
+    {
+      "event_id": "2c260004-8257-43a5-813e-4575d22735f5",
+      "event_name": "GraphProjectionCompleted",
+      "event_version": "1.0.0",
+      "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "agent_identity": "iam-bob-langgraph/estate-cartographer",
+      "correlation_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "causation_id": "8dac83cc-8308-4d15-bc87-c9b7b6847eed",
+      "timestamp": "2026-07-23T17:35:33Z",
+      "source_authority": "intent-os",
+      "disclosure_tier": "internal",
+      "payload": {
+        "meta_keys": [
+          "coverage_note",
+          "db_path",
+          "engine",
+          "engine_package",
+          "node_count",
+          "projected_at",
+          "projector_version",
+          "rebuild_duration_sec",
+          "relationship_count",
+          "source_set"
+        ]
+      },
+      "previous_event_hash": "72cfebebc3135f3a8584db003d85c9a7dc96c55a95d1dc2aed7e2d038ba4a844",
+      "content_hash": "7e858447501ba3fb23f203ff08d83a630eade1338881f1c6a14caed29e1d980e"
+    },
+    {
+      "event_id": "cf7a11f3-7ce3-4a48-ac7d-23eab3351f0e",
+      "event_name": "GraphVerificationCompleted",
+      "event_version": "1.0.0",
+      "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "agent_identity": "iam-bob-langgraph/estate-cartographer",
+      "correlation_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "causation_id": "2c260004-8257-43a5-813e-4575d22735f5",
+      "timestamp": "2026-07-23T17:35:34Z",
+      "source_authority": "intent-os",
+      "disclosure_tier": "internal",
+      "payload": {
+        "event_chain_ok": true,
+        "query_ok": true,
+        "query": {
+          "query": "agents-authorized-tool",
+          "rows": [
+            [
+              "Agent:agent:backup-op",
+              "Tool:tool:get_backup_freshness",
+              "declared"
+            ],
+            [
+              "Agent:agent:deploy-op",
+              "Tool:tool:get_service_health",
+              "declared"
+            ],
+            [
+              "Agent:agent:evidence-auditor",
+              "Tool:tool:verify_action_outcome",
+              "declared"
+            ],
+            [
+              "Agent:agent:evidence-auditor",
+              "Tool:tool:get_backup_freshness",
+              "declared"
+            ],
+            [
+              "Agent:agent:evidence-auditor",
+              "Tool:tool:verify_receipt",
+              "declared"
+            ],
+            [
+              "Agent:agent:evidence-auditor",
+              "Tool:tool:get_runbook",
+              "declared"
+            ],
+            [
+              "Agent:agent:incident-triage",
+              "Tool:tool:get_service_health",
+              "declared"
+            ],
+            [
+              "Agent:agent:incident-triage",
+              "Tool:tool:plan_service_restart",
+              "declared"
+            ],
+            [
+              "Agent:agent:incident-triage",
+              "Tool:tool:rollback_action",
+              "declared"
+            ],
+            [
+              "Agent:agent:incident-triage",
+              "Tool:tool:verify_action_outcome",
+              "declared"
+            ],
+            [
+              "Agent:agent:incident-triage",
+              "Tool:tool:execute_approved_action",
+              "declared"
+            ],
+            [
+              "Agent:agent:incident-triage",
+              "Tool:tool:request_action_approval",
+              "declared"
+            ],
+            [
+              "Agent:agent:incident-triage",
+              "Tool:tool:get_runbook",
+              "declared"
+            ],
+            [
+              "Agent:agent:observer",
+              "Tool:tool:get_service_health",
+              "declared"
+            ],
+            [
+              "Agent:agent:observer",
+              "Tool:tool:get_runbook",
+              "declared"
+            ],
+            [
+              "Agent:agent:observer",
+              "Tool:tool:get_automation_status",
+              "declared"
+            ],
+            [
+              "Agent:agent:observer",
+              "Tool:tool:get_backup_freshness",
+              "declared"
+            ],
+            [
+              "Agent:agent:observer",
+              "Tool:tool:verify_receipt",
+              "declared"
+            ],
+            [
+              "Agent:agent:security-reviewer",
+              "Tool:tool:verify_receipt",
+              "declared"
+            ],
+            [
+              "Agent:agent:watchdog",
+              "Tool:tool:get_automation_status",
+              "declared"
+            ],
+            [
+              "Agent:agent:watchdog",
+              "Tool:tool:get_runbook",
+              "declared"
+            ],
+            [
+              "Agent:agent:watchdog",
+              "Tool:tool:get_service_health",
+              "declared"
+            ]
+          ],
+          "count": 22
+        }
+      },
+      "previous_event_hash": "7e858447501ba3fb23f203ff08d83a630eade1338881f1c6a14caed29e1d980e",
+      "content_hash": "3a15c88eaf1562d149b8d4e2b91ea45b06c4532a9c25dd10e256db00adc2da54"
+    },
+    {
+      "event_id": "27362f22-af34-4667-a510-b75f791dab31",
+      "event_name": "CartographerRunCompleted",
+      "event_version": "1.0.0",
+      "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "agent_identity": "iam-bob-langgraph/estate-cartographer",
+      "correlation_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b",
+      "causation_id": "cf7a11f3-7ce3-4a48-ac7d-23eab3351f0e",
+      "timestamp": "2026-07-23T17:35:34Z",
+      "source_authority": "intent-os",
+      "disclosure_tier": "internal",
+      "payload": {
+        "run_id": "6140c298-fa6e-4ce6-97dc-06e3b546bb0b"
+      },
+      "previous_event_hash": "3a15c88eaf1562d149b8d4e2b91ea45b06c4532a9c25dd10e256db00adc2da54",
+      "content_hash": "35ca05fc7bc90883bcb6b716748f23edda0e4605f812acc712a9fece91856742"
+    }
+  ],
+  "proposals": [
+    {
+      "kind": "relationship",
+      "type": "OWNS",
+      "note": "machine-observed ownership candidate \u2014 human approval required to declare",
+      "requires_approval": true
+    }
+  ],
+  "disputes": [],
+  "approvals": [
+    {
+      "approved": true
+    }
+  ],
+  "previous_event_hash": "35ca05fc7bc90883bcb6b716748f23edda0e4605f812acc712a9fece91856742",
+  "projection_meta": {
+    "coverage_note": "Content-safe subset only \u2014 not full-estate coverage. Unknown ownership/lifecycle left unknown; no invented revenue/customer edges.",
+    "db_path": "/home/jeremy/.local/state/intent-os/estate-graph/mission-control.lbug",
+    "engine": "ladybug",
+    "engine_package": "ladybug",
+    "node_count": 200,
+    "projected_at": "2026-07-23T17:35:29Z",
+    "projector_version": "0.1.0",
+    "rebuild_duration_sec": 3.7923,
+    "relationship_count": 281,
+    "source_set": [
+      "000-docs/127-DR-STND-llm-legible-deterministic-architecture.md",
+      "ops/agent-gateway/first-run-2026-07-14",
+      "ops/agent-gateway/identities.json",
+      "ops/agent-gateway/tools.json",
+      "ops/incidents/runbook.md",
+      "ops/inventory/estate-inventory.json"
+    ]
+  },
+  "verification": {
+    "event_chain_ok": true,
+    "query_ok": true,
+    "query": {
+      "query": "agents-authorized-tool",
+      "rows": [
+        [
+          "Agent:agent:backup-op",
+          "Tool:tool:get_backup_freshness",
+          "declared"
+        ],
+        [
+          "Agent:agent:deploy-op",
+          "Tool:tool:get_service_health",
+          "declared"
+        ],
+        [
+          "Agent:agent:evidence-auditor",
+          "Tool:tool:verify_action_outcome",
+          "declared"
+        ],
+        [
+          "Agent:agent:evidence-auditor",
+          "Tool:tool:get_backup_freshness",
+          "declared"
+        ],
+        [
+          "Agent:agent:evidence-auditor",
+          "Tool:tool:verify_receipt",
+          "declared"
+        ],
+        [
+          "Agent:agent:evidence-auditor",
+          "Tool:tool:get_runbook",
+          "declared"
+        ],
+        [
+          "Agent:agent:incident-triage",
+          "Tool:tool:get_service_health",
+          "declared"
+        ],
+        [
+          "Agent:agent:incident-triage",
+          "Tool:tool:plan_service_restart",
+          "declared"
+        ],
+        [
+          "Agent:agent:incident-triage",
+          "Tool:tool:rollback_action",
+          "declared"
+        ],
+        [
+          "Agent:agent:incident-triage",
+          "Tool:tool:verify_action_outcome",
+          "declared"
+        ],
+        [
+          "Agent:agent:incident-triage",
+          "Tool:tool:execute_approved_action",
+          "declared"
+        ],
+        [
+          "Agent:agent:incident-triage",
+          "Tool:tool:request_action_approval",
+          "declared"
+        ],
+        [
+          "Agent:agent:incident-triage",
+          "Tool:tool:get_runbook",
+          "declared"
+        ],
+        [
+          "Agent:agent:observer",
+          "Tool:tool:get_service_health",
+          "declared"
+        ],
+        [
+          "Agent:agent:observer",
+          "Tool:tool:get_runbook",
+          "declared"
+        ],
+        [
+          "Agent:agent:observer",
+          "Tool:tool:get_automation_status",
+          "declared"
+        ],
+        [
+          "Agent:agent:observer",
+          "Tool:tool:get_backup_freshness",
+          "declared"
+        ],
+        [
+          "Agent:agent:observer",
+          "Tool:tool:verify_receipt",
+          "declared"
+        ],
+        [
+          "Agent:agent:security-reviewer",
+          "Tool:tool:verify_receipt",
+          "declared"
+        ],
+        [
+          "Agent:agent:watchdog",
+          "Tool:tool:get_automation_status",
+          "declared"
+        ],
+        [
+          "Agent:agent:watchdog",
+          "Tool:tool:get_runbook",
+          "declared"
+        ],
+        [
+          "Agent:agent:watchdog",
+          "Tool:tool:get_service_health",
+          "declared"
+        ]
+      ],
+      "count": 22
+    }
+  }
+}
