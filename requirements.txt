@@ -1,0 +1,3 @@
+# Runtime pins for local/CI install. Prefer pyproject.toml ranges for library consumers.
+langgraph>=0.2
+langchain-core>=0.3
