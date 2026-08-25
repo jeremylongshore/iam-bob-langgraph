@@ -2,6 +2,8 @@
 
 **Intent Agent Model (IAM) V3** — LangGraph runtime.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U5S225PTME)
+
 ## Status
 
 Vertical slice implemented: **Estate Cartographer** (read Intent OS authorities → proposals → optional graph projection → evidence chain).
